@@ -1,0 +1,36 @@
+.contact-section {
+	&__title {
+		font-size: 64px;
+		font-weight: 700;
+		text-align: center;
+		padding-bottom: 48px;
+
+		& .accent {
+			color: var(--color-primary);
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 32px;
+		align-items: stretch;
+	}
+
+	&__map {
+		border-radius: 32px;
+		flex: 60%;
+		height: auto;
+		max-height: none;
+	}
+
+	&__form {
+		flex: 40%;
+		height: auto;
+		max-height: none;
+		padding: 42px;
+		text-align: center;
+		background-color: var(--color-primary-dark);
+		border-radius: 48px;
+	}
+}

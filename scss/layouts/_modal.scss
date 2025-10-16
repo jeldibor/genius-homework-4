@@ -1,0 +1,73 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(1, 31, 74, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+	position: relative;
+	width: 100%;
+	max-width: 723px;
+	height: 100%;
+	max-height: 681px;
+	padding: 42px;
+	overflow: auto;
+	text-align: center;
+	background-color: var(--color-primary-dark);
+	border-radius: 48px;
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.modal-btn-close {
+	position: absolute;
+	right: 42px;
+	top: 42px;
+}
+
+.modal h2 {
+	color: #fff;
+	margin: 0 auto 40px;
+	font-family: Play;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	width: 435px;
+}
+
+.form-text-one {
+	color: #fff;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 274px;
+	margin: 0 auto 32px;
+}
+
+.form-text-two {
+	margin: 0 auto 42px;
+}
+
+.form-text-two,
+.form-text-two a {
+	color: #747272;
+	font-family: Roboto;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+}

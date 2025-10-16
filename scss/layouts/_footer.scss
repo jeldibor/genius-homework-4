@@ -1,0 +1,84 @@
+.footer {
+	background-color: #011c44;
+	position: relative;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		position: absolute;
+		background-image: url(../img/makeup.png);
+		width: 278px;
+		height: 213px;
+		bottom: -61px;
+		right: -31px;
+		background-repeat: no-repeat;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 186px;
+		padding: 56px 0;
+	}
+
+	&__nav-logo {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		gap: 186px;
+	}
+
+	&__nav .link {
+		color: #fff;
+	}
+
+	&__nav .link:hover {
+		color: var(--color-primary);
+		transition: color 0.3s;
+		cursor: pointer;
+	}
+
+	&__style-block {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		width: 192px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	&__address {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		gap: 186px;
+	}
+
+	&__address-link {
+		font-size: 16px;
+		text-decoration: none;
+		color: var(--color-white);
+	}
+
+	&__address-link:hover {
+		color: var(--color-primary);
+		transition: color 0.3s;
+	}
+
+	&__icon-container {
+		display: flex;
+		column-gap: 24px;
+	}
+
+	&__icon {
+		fill: #fff;
+	}
+
+	&__copyright {
+		font-size: 13px;
+		font-weight: 400;
+		color: #747272;
+	}
+}

@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	font-family: 'Play', sans-serif;
+}
+
+a {
+	display: inline-block;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--color-primary-dark);
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.accent {
+	color: var(--color-primary);
+}
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}

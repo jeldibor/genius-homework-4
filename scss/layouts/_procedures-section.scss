@@ -1,0 +1,27 @@
+.procedures {
+	&__title {
+		font-size: 64px;
+		font-weight: 700;
+		text-align: center;
+
+		& .accent {
+			color: var(--color-primary);
+		}
+	}
+
+	&__slider {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+
+	&__list {
+		display: flex;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__container {
+		overflow: hidden;
+	}
+}
