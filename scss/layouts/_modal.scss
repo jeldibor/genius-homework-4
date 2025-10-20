@@ -56,6 +56,10 @@
 	line-height: normal;
 	width: 274px;
 	margin: 0 auto 32px;
+
+	@media screen and (max-width: $bp-tablet) {
+		font-size: 18px;
+	}
 }
 
 .form-text-two {

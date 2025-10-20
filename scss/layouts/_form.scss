@@ -8,6 +8,10 @@
 	background-color: transparent;
 	width: 310px;
 	height: 52px;
+
+	@media screen and (max-width: $bp-tablet) {
+		padding: 10px 20px;
+	}
 }
 
 .form-input::placeholder {
@@ -39,6 +43,12 @@
 	line-height: normal;
 	font-weight: 600;
 	font-family: Roboto;
+
+	@media screen and (max-width: $bp-tablet) {
+		padding: 16px 24px;
+		font-size: 16px;
+		border-radius: 24px;
+	}
 }
 
 .form-button:hover {
