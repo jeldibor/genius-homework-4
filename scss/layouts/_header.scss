@@ -8,9 +8,14 @@
 	background: rgba(255, 255, 255, 0.25);
 	backdrop-filter: blur(5px);
 
+	&__logo {
+		flex-grow: 1;
+	}
+
 	&__nav {
 		display: flex;
-		gap: 240px;
+		gap: 20px;
+		flex-grow: 1;
 		align-items: center;
 
 		@media screen and (max-width: $bp-tablet) {
@@ -21,6 +26,7 @@
 
 	&__link {
 		display: flex;
+		flex-grow: 1;
 		gap: 56px;
 		padding: 0;
 

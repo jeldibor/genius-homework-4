@@ -1,6 +1,4 @@
 .introduction {
-	position: relative;
-
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -19,6 +17,7 @@
 	}
 
 	&__title {
+		position: relative;
 		font-size: 64px;
 		font-weight: 700;
 		line-height: 1.2;
@@ -53,6 +52,7 @@
 	}
 
 	&__images-container {
+		position: relative;
 		flex: 1 1 50%;
 		max-width: 50%;
 		display: flex;
@@ -70,11 +70,9 @@
 			row-gap: 0; /* прибираємо вертикальні відступи */
 			column-gap: 20px;
 		}
-
 		@media screen and (max-width: $bp-tablet) {
 			display: none;
 		}
-
 		& img {
 			border-radius: 50%;
 			object-fit: cover;
@@ -94,11 +92,11 @@
 	}
 }
 
-.introduction::before {
+.introduction__images-container::before {
 	content: '';
 	background-image: url(../img/dark-star.png);
 	position: absolute;
-	top: 356px;
+	top: 380px;
 	right: 356px;
 	width: 64px;
 	height: 64px;
@@ -108,12 +106,6 @@
 
 	@media screen and (max-width: 1100px) {
 		display: none;
-	}
-
-	@media screen and (max-width: $bp-tablet) {
-		display: block;
-		top: 90px;
-		right: 60px;
 	}
 }
 @keyframes pulse {
@@ -139,7 +131,7 @@
 	}
 }
 
-.introduction::after {
+.introduction__images-container::after {
 	content: '';
 	background-image: url(../img/light-star.png);
 	position: absolute;
@@ -154,7 +146,7 @@
 	transform-origin: center center;
 	animation: pulseRotate 6s infinite linear, sparkle 5s infinite;
 
-	@media screen and (max-width: $bp-tablet) {
+	@media screen and (max-width: 1100px) {
 		display: none;
 	}
 }
@@ -197,7 +189,7 @@
 	}
 }
 
-.introduction__title::after {
+.introduction__images-star::after {
 	content: '';
 	background-image: url(../img/mini-star.png);
 	position: absolute;
@@ -211,7 +203,7 @@
 	transform-origin: center center;
 	animation: pulseRotate 3s infinite linear;
 
-	@media screen and (max-width: $bp-tablet) {
+	@media screen and (max-width: 1100px) {
 		display: none;
 	}
 }
@@ -252,4 +244,23 @@
 	background-size: cover;
 	flex-shrink: 0;
 	z-index: 0;
+}
+
+@media screen and (max-width: $bp-tablet) {
+	.introduction__text::before {
+		content: '';
+		background-image: url(../img/dark-star.png);
+		position: absolute;
+		top: 900px;
+		right: 100px;
+		width: 64px;
+		height: 64px;
+		background-repeat: no-repeat;
+		animation: pulse 3s infinite linear;
+		transform-origin: center center;
+
+		@media screen and (max-width: 429px) {
+			display: none;
+		}
+	}
 }
