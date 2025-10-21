@@ -12,25 +12,48 @@
 		bottom: -61px;
 		right: -31px;
 		background-repeat: no-repeat;
+
+		@media screen and (max-width: $bp-tablet) {
+			display: none;
+		}
 	}
 
 	&__container {
 		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		gap: 186px;
+		justify-content: center;
+		align-items: stretch;
+		flex-wrap: wrap;
+		gap: 56px;
 		padding: 56px 0;
+
+		@media screen and (max-width: $bp-tablet) {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
 	}
 
 	&__nav-logo {
 		display: flex;
+		justify-content: space-around;
 		margin: 0;
 		padding: 0;
-		gap: 186px;
+		gap: 50px;
+		flex-grow: 1;
+
+		@media screen and (max-width: $bp-tablet) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 42px;
+		}
 	}
 
 	&__nav .link {
 		color: #fff;
+		@media screen and (max-width: $bp-tablet) {
+			margin: 0 auto;
+		}
 	}
 
 	&__nav .link:hover {
@@ -49,17 +72,47 @@
 		gap: 16px;
 	}
 
+	&__style-contact-block {
+		@media screen and (max-width: $bp-tablet) {
+			position: absolute;
+			left: -10000px;
+			top: auto;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+		}
+	}
+
 	&__address {
 		display: flex;
+		justify-content: space-around;
+		flex-grow: 1;
 		margin: 0;
 		padding: 0;
-		gap: 186px;
+		gap: 50px;
+
+		@media screen and (max-width: $bp-tablet) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 16px;
+		}
+	}
+
+	&__contact {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
 	}
 
 	&__address-link {
 		font-size: 16px;
 		text-decoration: none;
 		color: var(--color-white);
+
+		@media screen and (max-width: $bp-tablet) {
+			text-align: center;
+		}
 	}
 
 	&__address-link:hover {
@@ -70,6 +123,10 @@
 	&__icon-container {
 		display: flex;
 		column-gap: 24px;
+
+		@media screen and (max-width: $bp-tablet) {
+			column-gap: 20px;
+		}
 	}
 
 	&__icon {
@@ -80,5 +137,9 @@
 		font-size: 13px;
 		font-weight: 400;
 		color: #747272;
+
+		@media screen and (max-width: $bp-tablet) {
+			margin: 0 auto;
+		}
 	}
 }
