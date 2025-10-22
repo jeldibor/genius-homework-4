@@ -3,9 +3,16 @@
 		font-size: 64px;
 		font-weight: 700;
 		text-align: center;
+		padding-bottom: 48px;
 
 		& .accent {
 			color: var(--color-primary);
+		}
+
+		@media screen and (max-width: $bp-tablet) {
+			font-size: 32px;
+			font-weight: 500;
+			padding-bottom: 24px;
 		}
 	}
 

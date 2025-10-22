@@ -1,5 +1,9 @@
 .section {
 	padding: 48px 0;
+
+	@media screen and (max-width: $bp-tablet) {
+		padding: 20px 0;
+	}
 }
 .last-section {
 	padding: 48px 0;
